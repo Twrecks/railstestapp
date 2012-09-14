@@ -2291,3 +2291,188 @@ Served asset /comments.js - 304 Not Modified (0ms)
 
 Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-09-13 18:33:14 -0400
 Served asset /posts.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (7.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreatePosts (20120913171449)
+Migrating to CreateComments (20120913182055)
+Migrating to CreateTags (20120914162743)
+  [1m[35m (131.1ms)[0m  CREATE TABLE `tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `post_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (112.3ms)[0m  [1mCREATE INDEX `index_tags_on_post_id` ON `tags` (`post_id`)[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120914162743')
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-14 12:32:57 -0400
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 175ms (Views: 174.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-09-14 12:32:58 -0400
+Served asset /comments.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-14 12:32:58 -0400
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-14 12:32:58 -0400
+Served asset /jquery_ujs.js - 200 OK (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-14 12:32:58 -0400
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-14 12:32:58 -0400
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-14 12:32:58 -0400
+Served asset /home.css - 200 OK (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-09-14 12:32:58 -0400
+Served asset /posts.css - 200 OK (1ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-09-14 12:32:58 -0400
+Served asset /comments.js - 200 OK (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-14 12:32:58 -0400
+Served asset /home.js - 200 OK (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-09-14 12:32:58 -0400
+Served asset /posts.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-14 12:32:58 -0400
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-09-14 12:32:59 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts` [0m
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 182ms (Views: 29.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-09-14 12:33:02 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT `tags`.* FROM `tags` WHERE `tags`.`post_id` = 1[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`post_id` = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  Rendered comments/_comment.html.erb (24.3ms)
+  Rendered comments/_form.html.erb (66.3ms)
+  Rendered posts/show.html.erb within layouts/application (256.5ms)
+Completed 200 OK in 266ms (Views: 258.8ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2012-09-14 12:33:08 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Filter chain halted as #<Proc:0x007fddb8ad7c60@/Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/actionpack-3.2.8/lib/action_controller/metal/http_authentication.rb:112> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2012-09-14 12:33:25 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT `tags`.* FROM `tags` WHERE `tags`.`post_id` = 1[0m
+  Rendered tags/_form.html.erb (1.7ms)
+  Rendered posts/_form.html.erb (13.0ms)
+  Rendered posts/edit.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/posts/1" for 127.0.0.1 at 2012-09-14 12:35:43 -0400
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j0MI6vd8qB40FpB7sh84vzck4tYFQF7CGvR5ryJY560=", "post"=>{"name"=>"johnny", "title"=>"Lorem ipsum dolor sit amet", "content"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis libero, elementum ornare dolor. Donec luctus pellentesque libero, eget condimentum eros tincidunt non. Proin viverra vehicula dictum. Cras purus leo, bibendum vel scelerisque a, tempus vel libero. In in interdum enim. Phasellus accumsan convallis est, sit amet vestibulum urna ullamcorper at. Nam tincidunt augue eu massa vehicula vehicula.\r\n\r\nInteger sit amet condimentum mauris. Aliquam bibendum venenatis turpis, non condimentum nisl fringilla sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus dui nec sapien consectetur fermentum. Nullam sodales erat vitae turpis pulvinar accumsan. Nunc metus tortor, egestas a pellentesque ut, varius vitae nisi. Morbi mattis metus sed quam hendrerit scelerisque. Curabitur non odio vitae dui lobortis tristique sed nec quam. Quisque at libero sit amet metus interdum tempus vitae eget nisi. Sed facilisis tempor arcu eu molestie. Praesent commodo commodo ipsum ac facilisis. Sed pretium odio a velit vehicula interdum. Donec adipiscing mauris vel est rutrum eget dignissim felis luctus. Vivamus auctor cursus lacus quis fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum euismod varius molestie.\r\n\r\nMauris vitae justo metus. Vestibulum gravida purus sed enim mattis in elementum velit vehicula. Nunc eu pellentesque felis. Fusce commodo pharetra elementum. Aenean quis tortor massa. Proin ullamcorper scelerisque libero vel egestas. Vivamus imperdiet venenatis odio eget molestie.", "tags_attributes"=>{"0"=>{"name"=>"Rails, Ruby"}}}, "commit"=>"Update Post", "id"=>"1"}
+Filter chain halted as #<Proc:0x007fddb9b5f060@/Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/actionpack-3.2.8/lib/action_controller/metal/http_authentication.rb:112> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started PUT "/posts/1" for 127.0.0.1 at 2012-09-14 12:35:43 -0400
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j0MI6vd8qB40FpB7sh84vzck4tYFQF7CGvR5ryJY560=", "post"=>{"name"=>"johnny", "title"=>"Lorem ipsum dolor sit amet", "content"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis libero, elementum ornare dolor. Donec luctus pellentesque libero, eget condimentum eros tincidunt non. Proin viverra vehicula dictum. Cras purus leo, bibendum vel scelerisque a, tempus vel libero. In in interdum enim. Phasellus accumsan convallis est, sit amet vestibulum urna ullamcorper at. Nam tincidunt augue eu massa vehicula vehicula.\r\n\r\nInteger sit amet condimentum mauris. Aliquam bibendum venenatis turpis, non condimentum nisl fringilla sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus dui nec sapien consectetur fermentum. Nullam sodales erat vitae turpis pulvinar accumsan. Nunc metus tortor, egestas a pellentesque ut, varius vitae nisi. Morbi mattis metus sed quam hendrerit scelerisque. Curabitur non odio vitae dui lobortis tristique sed nec quam. Quisque at libero sit amet metus interdum tempus vitae eget nisi. Sed facilisis tempor arcu eu molestie. Praesent commodo commodo ipsum ac facilisis. Sed pretium odio a velit vehicula interdum. Donec adipiscing mauris vel est rutrum eget dignissim felis luctus. Vivamus auctor cursus lacus quis fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum euismod varius molestie.\r\n\r\nMauris vitae justo metus. Vestibulum gravida purus sed enim mattis in elementum velit vehicula. Nunc eu pellentesque felis. Fusce commodo pharetra elementum. Aenean quis tortor massa. Proin ullamcorper scelerisque libero vel egestas. Vivamus imperdiet venenatis odio eget molestie.", "tags_attributes"=>{"0"=>{"name"=>"Rails, Ruby"}}}, "commit"=>"Update Post", "id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO `tags` (`created_at`, `name`, `post_id`, `updated_at`) VALUES ('2012-09-14 16:35:43', 'Rails, Ruby', 1, '2012-09-14 16:35:43')
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 77ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-09-14 12:35:43 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT `tags`.* FROM `tags` WHERE `tags`.`post_id` = 1[0m
+  [1m[35mComment Load (0.6ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`post_id` = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  Rendered comments/_comment.html.erb (2.3ms)
+  Rendered comments/_form.html.erb (1.8ms)
+  Rendered posts/show.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 46ms (Views: 41.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-09-14 12:35:51 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` 
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2012-09-14 12:35:54 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT `tags`.* FROM `tags` WHERE `tags`.`post_id` = 1
+  Rendered tags/_form.html.erb (1.5ms)
+  Rendered posts/_form.html.erb (4.3ms)
+  Rendered posts/edit.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/posts/1" for 127.0.0.1 at 2012-09-14 12:36:08 -0400
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j0MI6vd8qB40FpB7sh84vzck4tYFQF7CGvR5ryJY560=", "post"=>{"name"=>"johnny", "title"=>"Lorem ipsum dolor sit amet", "content"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis libero, elementum ornare dolor. Donec luctus pellentesque libero, eget condimentum eros tincidunt non. Proin viverra vehicula dictum. Cras purus leo, bibendum vel scelerisque a, tempus vel libero. In in interdum enim. Phasellus accumsan convallis est, sit amet vestibulum urna ullamcorper at. Nam tincidunt augue eu massa vehicula vehicula.\r\n\r\nInteger sit amet condimentum mauris. Aliquam bibendum venenatis turpis, non condimentum nisl fringilla sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus dui nec sapien consectetur fermentum. Nullam sodales erat vitae turpis pulvinar accumsan. Nunc metus tortor, egestas a pellentesque ut, varius vitae nisi. Morbi mattis metus sed quam hendrerit scelerisque. Curabitur non odio vitae dui lobortis tristique sed nec quam. Quisque at libero sit amet metus interdum tempus vitae eget nisi. Sed facilisis tempor arcu eu molestie. Praesent commodo commodo ipsum ac facilisis. Sed pretium odio a velit vehicula interdum. Donec adipiscing mauris vel est rutrum eget dignissim felis luctus. Vivamus auctor cursus lacus quis fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum euismod varius molestie.\r\n\r\nMauris vitae justo metus. Vestibulum gravida purus sed enim mattis in elementum velit vehicula. Nunc eu pellentesque felis. Fusce commodo pharetra elementum. Aenean quis tortor massa. Proin ullamcorper scelerisque libero vel egestas. Vivamus imperdiet venenatis odio eget molestie.", "tags_attributes"=>{"0"=>{"name"=>"Rails", "_destroy"=>"0", "id"=>"1"}, "1"=>{"name"=>"ruby"}}}, "commit"=>"Update Post", "id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT `tags`.* FROM `tags` WHERE `tags`.`post_id` = 1 AND `tags`.`id` IN (1)[0m
+  [1m[35m (0.3ms)[0m  UPDATE `tags` SET `name` = 'Rails', `updated_at` = '2012-09-14 16:36:08' WHERE `tags`.`id` = 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `tags` (`created_at`, `name`, `post_id`, `updated_at`) VALUES ('2012-09-14 16:36:08', 'ruby', 1, '2012-09-14 16:36:08')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 42ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-09-14 12:36:08 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT `tags`.* FROM `tags` WHERE `tags`.`post_id` = 1
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT `comments`.* FROM `comments` WHERE `comments`.`post_id` = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  Rendered comments/_comment.html.erb (0.9ms)
+  Rendered comments/_form.html.erb (1.7ms)
+  Rendered posts/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2012-09-14 12:36:11 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mTag Load (0.3ms)[0m  SELECT `tags`.* FROM `tags` WHERE `tags`.`post_id` = 1
+  Rendered tags/_form.html.erb (2.0ms)
+  Rendered posts/_form.html.erb (4.6ms)
+  Rendered posts/edit.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.7ms)
