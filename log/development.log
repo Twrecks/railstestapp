@@ -3421,3 +3421,457 @@ Served asset /active_admin/application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-09-14 13:10:26 -0400
 Served asset /active_admin/base.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-18 13:13:55 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 509ms (Views: 508.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /active_admin.css - 200 OK (32ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /application.css - 200 OK (23ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /comments.css - 200 OK (1ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /posts.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /home.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /jquery-ui.js - 200 OK (2ms)
+
+
+Started GET "/assets/active_admin/lib/namespace.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /active_admin/lib/namespace.js - 200 OK (2ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.checkbox-toggler.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /active_admin/components/jquery.aa.checkbox-toggler.js - 200 OK (3ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.dropdown-menu.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /active_admin/components/jquery.aa.dropdown-menu.js - 200 OK (2ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /active_admin/components/jquery.aa.table-checkbox-toggler.js - 200 OK (2ms)
+
+
+Started GET "/assets/active_admin/components/jquery.aa.popover.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /active_admin/components/jquery.aa.popover.js - 200 OK (2ms)
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /active_admin/base.js - 200 OK (40ms)
+
+
+Started GET "/assets/active_admin/pages/batch_actions.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /active_admin/pages/batch_actions.js - 200 OK (2ms)
+
+
+Started GET "/assets/active_admin/pages/application.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /active_admin/pages/application.js - 200 OK (2ms)
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /active_admin/application.js - 200 OK (9ms)
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /active_admin.js - 200 OK (12ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /comments.js - 200 OK (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /home.js - 200 OK (1ms)
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /posts.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-18 13:13:56 -0400
+Served asset /application.js - 200 OK (16ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-09-18 13:13:59 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` [0m
+  Rendered posts/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 59ms (Views: 38.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-09-18 13:14:05 -0400
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2012-09-18 13:14:05 -0400
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/devise/shared/_links.erb (2.7ms)
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (156.2ms)
+Completed 200 OK in 309ms (Views: 267.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2012-09-18 13:14:06 -0400
+Served asset /active_admin/print.css - 200 OK (2ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2012-09-18 13:14:09 -0400
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"igpSTDlzlnV8Jp517FQltZcR4RLJpJ8cTMHP7rTGCb8=", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`email` = 'admin@example.com' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (9.8ms)[0m  UPDATE `admin_users` SET `remember_created_at` = '2012-09-18 17:14:09', `updated_at` = '2012-09-18 17:14:09' WHERE `admin_users`.`id` = 1
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE `admin_users` SET `current_sign_in_at` = '2012-09-18 17:14:09', `sign_in_count` = 2, `updated_at` = '2012-09-18 17:14:09' WHERE `admin_users`.`id` = 1[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 248ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-09-18 13:14:09 -0400
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/page/index.html.arb (45.3ms)
+Completed 200 OK in 61ms (Views: 59.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/active_admin.js" for 127.0.0.1 at 2012-09-18 13:14:09 -0400
+Served asset /active_admin.js - 200 OK (0ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2012-09-18 13:14:13 -0400
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `admin_users` 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` ORDER BY `admin_users`.`id` desc LIMIT 30 OFFSET 0
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (100.2ms)
+Completed 200 OK in 162ms (Views: 117.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2012-09-18 13:14:13 -0400
+Served asset /active_admin/orderable.png - 200 OK (19ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2012-09-18 13:14:22 -0400
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdminUser Load (0.7ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `posts` LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `posts` [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `posts` LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` desc LIMIT 30 OFFSET 0[0m
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (178.9ms)
+Completed 200 OK in 185ms (Views: 180.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-nipple.png" for 127.0.0.1 at 2012-09-18 13:14:22 -0400
+Served asset /active_admin/datepicker/datepicker-nipple.png - 200 OK (14ms)
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2012-09-18 13:14:22 -0400
+Served asset /active_admin/datepicker/datepicker-input-icon.png - 200 OK (2ms)
+
+
+Started GET "/admin/posts?utf8=%E2%9C%93&q%5Bname_contains%5D=david&q%5Btitle_contains%5D=&q%5Bcontent_contains%5D=&q%5Bcreated_at_gte%5D=&q%5Bcreated_at_lte%5D=&q%5Bupdated_at_gte%5D=&q%5Bupdated_at_lte%5D=&commit=Filter&order=id_desc" for 127.0.0.1 at 2012-09-18 13:14:46 -0400
+Processing by Admin::PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_contains"=>"david", "title_contains"=>"", "content_contains"=>"", "created_at_gte"=>"", "created_at_lte"=>"", "updated_at_gte"=>"", "updated_at_lte"=>""}, "commit"=>"Filter", "order"=>"id_desc"}
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `posts` WHERE (`posts`.`name` LIKE '%david%') LIMIT 30 OFFSET 0) subquery_for_count [0m
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (106.6ms)
+Completed 200 OK in 115ms (Views: 108.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/posts/new" for 127.0.0.1 at 2012-09-18 13:14:53 -0400
+Processing by Admin::PostsController#new as HTML
+  [1m[35mAdminUser Load (0.6ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/new.html.arb (67.1ms)
+Completed 200 OK in 106ms (Views: 102.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2012-09-18 13:14:58 -0400
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `admin_users` [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` ORDER BY `admin_users`.`id` desc LIMIT 30 OFFSET 0[0m
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (40.8ms)
+Completed 200 OK in 45ms (Views: 41.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2012-09-18 13:14:59 -0400
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/page/index.html.arb (11.8ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2012-09-18 13:15:00 -0400
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `admin_users` [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` ORDER BY `admin_users`.`id` desc LIMIT 30 OFFSET 0[0m
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (71.8ms)
+Completed 200 OK in 76ms (Views: 73.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2012-09-18 13:15:04 -0400
+Processing by Admin::PostsController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `posts` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `posts` 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `posts` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` desc LIMIT 30 OFFSET 0
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (112.7ms)
+Completed 200 OK in 117ms (Views: 113.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/posts/1" for 127.0.0.1 at 2012-09-18 13:15:07 -0400
+Processing by Admin::PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Post' AND `active_admin_comments`.`resource_id` = '1' AND `active_admin_comments`.`namespace` = 'admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Post' AND `active_admin_comments`.`resource_id` = '1' AND `active_admin_comments`.`namespace` = 'admin'
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/show.html.arb (90.6ms)
+Completed 200 OK in 130ms (Views: 124.0ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/admin/comments" for 127.0.0.1 at 2012-09-18 13:15:18 -0400
+Processing by Admin::CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"igpSTDlzlnV8Jp517FQltZcR4RLJpJ8cTMHP7rTGCb8=", "active_admin_comment"=>{"resource_type"=>"Post", "resource_id"=>"1", "body"=>"This is awesome"}, "commit"=>"Add Comment"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `active_admin_comments` (`author_id`, `author_type`, `body`, `created_at`, `namespace`, `resource_id`, `resource_type`, `updated_at`) VALUES (1, 'AdminUser', 'This is awesome', '2012-09-18 17:15:18', 'admin', '1', 'Post', '2012-09-18 17:15:18')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/admin/comments/1
+Completed 302 Found in 55ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/comments/1" for 127.0.0.1 at 2012-09-18 13:15:18 -0400
+Processing by Admin::CommentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mActiveAdmin::Comment Load (0.2ms)[0m  [1mSELECT `active_admin_comments`.* FROM `active_admin_comments` WHERE `active_admin_comments`.`id` = 1 LIMIT 1[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+Redirected to http://localhost:3000/admin/posts/1
+Filter chain halted as #<Proc:0x007fcb43678cf0@/Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/lib/active_admin/comments.rb:46> rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/posts/1" for 127.0.0.1 at 2012-09-18 13:15:18 -0400
+Processing by Admin::PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Post' AND `active_admin_comments`.`resource_id` = '1' AND `active_admin_comments`.`namespace` = 'admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Post' AND `active_admin_comments`.`resource_id` = '1' AND `active_admin_comments`.`namespace` = 'admin'
+  [1m[36mActiveAdmin::Comment Load (0.2ms)[0m  [1mSELECT `active_admin_comments`.* FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Post' AND `active_admin_comments`.`resource_id` = '1' AND `active_admin_comments`.`namespace` = 'admin'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/show.html.arb (75.5ms)
+Completed 200 OK in 80ms (Views: 77.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-18 13:15:33 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2012-09-18 13:15:35 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` [0m
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2012-09-18 13:15:37 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT `tags`.* FROM `tags` WHERE `tags`.`post_id` = 1[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT `comments`.* FROM `comments` WHERE `comments`.`post_id` = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  Rendered comments/_comment.html.erb (5.9ms)
+  Rendered comments/_form.html.erb (4.0ms)
+  Rendered posts/show.html.erb within layouts/application (110.2ms)
+Completed 200 OK in 163ms (Views: 139.9ms | ActiveRecord: 22.2ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2012-09-18 13:16:16 -0400
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `admin_users` 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT `admin_users`.* FROM `admin_users` ORDER BY `admin_users`.`id` desc LIMIT 30 OFFSET 0
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (71.5ms)
+Completed 200 OK in 76ms (Views: 72.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2012-09-18 13:16:17 -0400
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/page/index.html.arb (11.8ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2012-09-18 13:16:18 -0400
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `admin_users` 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT `admin_users`.* FROM `admin_users` ORDER BY `admin_users`.`id` desc LIMIT 30 OFFSET 0
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (41.3ms)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2012-09-18 13:16:19 -0400
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `posts` LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `posts` [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `posts` LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` desc LIMIT 30 OFFSET 0[0m
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (151.7ms)
+Completed 200 OK in 156ms (Views: 152.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2012-09-18 13:16:20 -0400
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `admin_users` 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` ORDER BY `admin_users`.`id` desc LIMIT 30 OFFSET 0
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (41.9ms)
+Completed 200 OK in 46ms (Views: 43.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2012-09-18 13:16:21 -0400
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/page/index.html.arb (11.6ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2012-09-18 13:16:23 -0400
+Processing by Admin::PostsController#index as HTML
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `posts` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts` 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `posts` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` desc LIMIT 30 OFFSET 0
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (118.4ms)
+Completed 200 OK in 123ms (Views: 119.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2012-09-18 13:16:24 -0400
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `admin_users` [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` ORDER BY `admin_users`.`id` desc LIMIT 30 OFFSET 0[0m
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (38.2ms)
+Completed 200 OK in 43ms (Views: 39.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2012-09-18 13:16:38 -0400
+Processing by Admin::PostsController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `posts` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts` 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `posts` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` desc LIMIT 30 OFFSET 0
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (114.0ms)
+Completed 200 OK in 118ms (Views: 115.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2012-09-18 13:16:39 -0400
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/page/index.html.arb (11.8ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2012-09-18 13:16:42 -0400
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `admin_users` 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT `admin_users`.* FROM `admin_users` ORDER BY `admin_users`.`id` desc LIMIT 30 OFFSET 0
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (74.5ms)
+Completed 200 OK in 79ms (Views: 75.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/admin_users?order=last_sign_in_at_desc" for 127.0.0.1 at 2012-09-18 13:16:44 -0400
+Processing by Admin::AdminUsersController#index as HTML
+  Parameters: {"order"=>"last_sign_in_at_desc"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `admin_users` [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` ORDER BY `admin_users`.`last_sign_in_at` desc LIMIT 30 OFFSET 0[0m
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (42.3ms)
+Completed 200 OK in 46ms (Views: 43.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/admin_users?order=sign_in_count_desc" for 127.0.0.1 at 2012-09-18 13:16:47 -0400
+Processing by Admin::AdminUsersController#index as HTML
+  Parameters: {"order"=>"sign_in_count_desc"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `admin_users` 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 30 OFFSET 0) subquery_for_count [0m
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` ORDER BY `admin_users`.`sign_in_count` desc LIMIT 30 OFFSET 0
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (72.9ms)
+Completed 200 OK in 77ms (Views: 74.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2012-09-18 13:16:54 -0400
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `posts` LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `posts` [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `posts` LIMIT 30 OFFSET 0) subquery_for_count 
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` desc LIMIT 30 OFFSET 0[0m
+  Rendered /Users/defaultuser/.rvm/gems/ruby-1.9.3-p194@defaultgemset/gems/activeadmin-0.5.0/app/views/active_admin/resource/index.html.arb (114.5ms)
+Completed 200 OK in 118ms (Views: 115.6ms | ActiveRecord: 1.2ms)
