@@ -1,4 +1,15 @@
 <%= form_for([@post, @post.comments.build]) do |f| %>
+
+<% if @post.errors.any? %>
+   <div id="error_explanation">
+     <ul>
+     <% @post.errors.full_messages.each do |msg| %>
+       <li><%= msg %></li>
+     <% end %>
+     </ul>
+   </div>
+<% end %>
+
   <div class="field">
     <%= f.label :commenter %><br />
     <%= f.text_field :commenter %>
