@@ -1,9 +1,9 @@
-<%= form_for([@post, @post.comments.build]) do |f| %>
+<%= form_for([@post, @comment]) do |f| %>
 
-<% if @post.errors.any? %>
+<% if @comment.errors.any? %>
    <div id="error_explanation">
      <ul>
-     <% @post.errors.full_messages.each do |msg| %>
+     <% @comment.errors.full_messages.each do |msg| %>
        <li><%= msg %></li>
      <% end %>
      </ul>
