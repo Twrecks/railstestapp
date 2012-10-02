@@ -1,5 +1,6 @@
 <%= form_for([@post, @comment]) do |f| %>
 
+
 <% if @comment.errors.any? %>
    <div id="error_explanation">
      <ul>
@@ -13,10 +14,14 @@
   <div class="field">
     <%= f.label :commenter %><br />
     <%= f.text_field :commenter %>
+	<%= @comment.errors[:commenter].any? ? @comment.errors[:commenter].first : "" %>
   </div>
   <div class="field">
     <%= f.label :body %><br />
     <%= f.text_area :body %>
+	<% if @comment.errors[:body].any?  %>
+		<p style="color:red;"><%= @comment.errors[:body].first %></p>
+	<% end %>
   </div>
   <div class="actions">
     <%= f.submit %>
