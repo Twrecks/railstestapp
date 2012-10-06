@@ -1,33 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @post.name %>
-</p>
+<div class="post">
+	<h1><%= @post.title %></h1>
+	<p><b>By: </b><%= @post.name %> </p>
+	<div class="post-body"><%= @post.content %></div>
+	<p><b>Tags: </b><%= join_tags(@post) %></p>
+	<%= image_tag @post.postfile.url %>
 
-<p>
-  <b>Title:</b>
-  <%= @post.title %>
-</p>
+	<p class="al-rt"><%= link_to 'Edit', edit_post_path(@post) %> | <%= link_to 'Back', posts_path %></p>
+</div>
 
-<p>
-  <b>Content:</b>
-  <%= @post.content %>
-</p>
+<div class="comment-wrap">
+	<h2>Comments</h2>
+	<%= render @post.comments %>
+</div>
 
-<p>
-  <b>Tags:</b>
-  <%= join_tags(@post) %>
-</p>
-
-<h2>Comments</h2>
-<%= render @post.comments %>
- 
-<h2>Add a comment:</h2>
-<%= render "comments/form" %>
-
- 
-<br />
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<div class="comment-form">
+	<h2>Add a comment:</h2>
+	<%= render "comments/form" %>
+</div>
